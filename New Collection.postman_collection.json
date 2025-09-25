@@ -1,0 +1,439 @@
+{
+	"info": {
+		"_postman_id": "92d3a204-7f3b-412d-b39e-b8c11e8bd403",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "47361220",
+		"_collection_link": "https://norhan-mabrouk-7303264.postman.co/workspace/Norhan-Mabrouk's-Workspace~32f0cfe5-d914-4429-8a5c-cd5bf90be7a6/collection/47361220-92d3a204-7f3b-412d-b39e-b8c11e8bd403?action=share&source=collection_link&creator=47361220"
+	},
+	"item": [
+		{
+			"name": "supplier_selectone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/route/assignment5/api/supplier.php?id=8",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"route",
+						"assignment5",
+						"api",
+						"supplier.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supplier_selectall",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost/route/assignment5/api/supplier.php"
+			},
+			"response": []
+		},
+		{
+			"name": "supplier_create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "test1",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "0100111222",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test1@email.com",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "11/11/2000",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost/route/assignment5/api/supplier.php"
+			},
+			"response": []
+		},
+		{
+			"name": "supplier_update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "update test",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "010015566",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "update@email.com",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "15/1/2000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/route/assignment5/api/supplier.php?id=8",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"route",
+						"assignment5",
+						"api",
+						"supplier.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "update test",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "010015566",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "update@email.com",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "15/1/2000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/route/assignment5/api/supplier.php?id=3",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"route",
+						"assignment5",
+						"api",
+						"supplier.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product_selecctall",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "test1",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "0100111222",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test1@email.com",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "11/11/2000",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost/route/assignment5/api/product.php"
+			},
+			"response": []
+		},
+		{
+			"name": "product_selectone",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "test1",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "0100111222",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test1@email.com",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "11/11/2000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/route/assignment5/api/product.php?id=3",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"route",
+						"assignment5",
+						"api",
+						"product.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product_create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "22333",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test description",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "90",
+							"type": "text"
+						},
+						{
+							"key": "supplier_id",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "img",
+							"type": "file",
+							"src": "87177075_3283207595027078_8110384824633524224_o.jpg"
+						}
+					]
+				},
+				"url": "localhost/route/assignment5/api/product.php"
+			},
+			"response": []
+		},
+		{
+			"name": "product_update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "update",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "223335",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "update description",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "110",
+							"type": "text"
+						},
+						{
+							"key": "supplier_id",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "img",
+							"type": "file",
+							"src": "87177075_3283207595027078_8110384824633524224_o.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/route/assignment5/api/product.php?id=3",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"route",
+						"assignment5",
+						"api",
+						"product.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product_delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "22333",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test description",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "90",
+							"type": "text"
+						},
+						{
+							"key": "supplier_id",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "img",
+							"type": "file",
+							"src": "87177075_3283207595027078_8110384824633524224_o.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/route/assignment5/api/product.php?id=1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"route",
+						"assignment5",
+						"api",
+						"product.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
